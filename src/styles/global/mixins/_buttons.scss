@@ -1,0 +1,37 @@
+////***------------------ Button & Link Mixins ------------------**/////
+
+@mixin button($bg, $text-hover) {
+  background: $bg;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $text-hover;
+    background: darken($bg, 12%);
+  }
+
+  &:active {
+    color: $text-hover;
+    background: darken($bg, 25%);
+  }
+}
+
+@mixin a-tag-link($color) {
+  color: $color;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: darken($color, 20%);;
+  }
+
+  &:active,
+  &:visited {
+    color: darken($color, 60%);
+  }
+}

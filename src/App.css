@@ -1,0 +1,12 @@
+li {
+    list-style: none;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    padding: 50px;
+    color: black;
+}
