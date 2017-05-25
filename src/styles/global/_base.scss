@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: $site-background-color;
-  font-family: $font_1, $font-2, $font-3, $sans-serif;
+  font-family: $family-font;
   @include rem(font-size, $font-base);
   line-height: 1.5;
   color: $primary-text-color;

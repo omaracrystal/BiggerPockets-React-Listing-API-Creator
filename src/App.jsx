@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import './App.css';
+import './styles/main.css';
 import 'normalize.css';
+import FontAwesome from 'react-fontawesome';
 
 class App extends Component {
 
@@ -9,32 +10,42 @@ class App extends Component {
             <div className="App">
                 <h1 className="App-header">Listings</h1>
 
-                <form>
-                    <input className="input-name" />
-                    <input className="input-url" />
-                    <button>ENTER</button>
+                <form className="App-form">
+                    <input className="form-input form-input-name" />
+                    <input className="form-input form-input-url" />
+                    <button className="form-button-save">SAVE</button>
                 </form>
 
-                <ul>
-                    <li>
-                        <h3>Dolor Ipsum</h3>
-                        <p>www.something.com</p>
+                <ul className="App-list-container">
+                    <li className="listing-item-wrapper">
+                        <h3 className="listing-item-name">Dolor Ipsum</h3>
+                        <p className="listing-item-url">www.something.com</p>
+                        <FontAwesome name='pencil' />
+                        <FontAwesome name='trash-o' />
                     </li>
-                    <li>
-                        <h3>Dolor Ipsum</h3>
-                        <p>www.something.com</p>
+                    <li className="App-listing-item-wrapper">
+                        <h3 className="listing-item-name">Dolor Ipsum</h3>
+                        <p className="listing-item-url">www.something.com</p>
+                        <FontAwesome name='pencil' />
+                        <FontAwesome name='trash-o' />
                     </li>
-                    <li>
-                        <h3>Dolor Ipsum</h3>
-                        <p>www.something.com</p>
+                    <li className="App-listing-item-wrapper">
+                        <h3 className="listing-item-name">Dolor Ipsum</h3>
+                        <p className="listing-item-url">www.something.com</p>
+                        <FontAwesome name='pencil' />
+                        <FontAwesome name='trash-o' />
                     </li>
-                    <li>
-                        <h3>Dolor Ipsum</h3>
-                        <p>www.something.com</p>
+                    <li className="App-listing-item-wrapper">
+                        <h3 className="listing-item-name">Dolor Ipsum</h3>
+                        <p className="listing-item-url">www.something.com</p>
+                        <FontAwesome name='pencil' />
+                        <FontAwesome name='trash-o' />
                     </li>
-                    <li>
-                        <h3>Dolor Ipsum</h3>
-                        <p>www.something.com</p>
+                    <li className="App-listing-item-wrapper">
+                        <h3 className="listing-item-name">Dolor Ipsum</h3>
+                        <p className="listing-item-url">www.something.com</p>
+                        <FontAwesome name='pencil' />
+                        <FontAwesome name='trash-o' />
                     </li>
                 </ul>
             </div>
