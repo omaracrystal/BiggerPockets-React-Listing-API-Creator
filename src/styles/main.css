@@ -179,14 +179,13 @@ li {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 10px; }
+  padding-bottom: 50px; }
   .App-form .form-input {
-    padding: 10px;
+    padding: 15px;
     border: 0;
     box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.207843); }
   .App-form .form-input-name {
     border-radius: 5px 0 0 5px;
-    margin-left: 10px;
     width: 30%; }
   .App-form .form-input-url {
     border-radius: 0 5px 5px 0;
@@ -195,8 +194,8 @@ li {
     border-radius: 5px;
     border: 0;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.21);
-    margin: 0 10px;
-    padding: 10px;
+    margin-left: 10px;
+    padding: 15px;
     width: 100px;
     background: #4A90E2;
     color: #ffffff;
@@ -217,19 +216,25 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 760px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 20px; }
   .App-list-container .App-listing-item-wrapper {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.21);
-    width: 350px;
+    width: 44%;
+    min-width: 300px;
     background: #ffffff;
-    margin: 10px;
+    margin: 15px 0;
     cursor: pointer;
-    height: 150px;
+    height: 100px;
     border-radius: 5px;
+    text-align: left;
+    padding: 15px;
     transition: all 0.3s ease; }
     .App-list-container .App-listing-item-wrapper:hover, .App-list-container .App-listing-item-wrapper:focus, .App-list-container .App-listing-item-wrapper:active {
       box-shadow: 0px 7px 25px 4px rgba(0, 0, 0, 0.21);
-      margin-top: -2px; }
+      margin-top: 10px; }
+    .App-list-container .App-listing-item-wrapper .listing-item-name {
+      margin: 0; }
 
 /* -------------------------- CONTAINERS -------------------------- */
 .App {
