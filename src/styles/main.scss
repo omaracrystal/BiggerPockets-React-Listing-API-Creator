@@ -4,17 +4,17 @@
 
 /* ---------------------------- GLOBAL ---------------------------- */
 
-@import "global/variables/colors";
+@import "global/variables/var-colors";
 
-@import "global/variables/fonts";
+@import "global/variables/var-fonts";
 
-@import "global/variables/media-queries";
+@import "global/variables/var-media-queries";
 
-@import "global/variables/other";
+@import "global/variables/var-other";
 
-@import "global/mixins/buttons";
+@import "global/mixins/mixins-buttons";
 
-@import "global/mixins/px-to-rem";
+@import "global/mixins/mixins-px-to-rem";
 
 @import "global/base";
 

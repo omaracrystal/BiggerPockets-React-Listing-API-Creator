@@ -1,6 +1,27 @@
 .App-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $mq-tablet;
+  margin: auto;
 
-  .listing-item-wrapper {
+  .App-listing-item-wrapper {
+    box-shadow: $box-shadow-property-card;
+    width: 350px;
+    background: $property-card-background-color;
+    margin: 10px;
+    cursor: pointer;
+    height: 150px;
+    border-radius: $border-radius;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: $box-shadow-property-card-hover;
+      margin-top: -2px;
+    }
+
     .listing-item-name {
 
     }

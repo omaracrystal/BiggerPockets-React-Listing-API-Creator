@@ -57,7 +57,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #F4F4F4;
+  background-color: #f4f0f0;
   font-family: "Open Sans", "Arial", "Helvetica", "sans-serif";
   /* 3 */
   /* 3 */
@@ -70,7 +70,7 @@ body {
   font-size: 1.4rem;
   /* 9 */
   line-height: 1.5;
-  color: #000000;
+  color: #3c3939;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -90,6 +90,9 @@ a {
 
 b, strong {
   font-weight: 600; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-weight: 400; }
 
 h1,
 .h1 {
@@ -156,41 +159,81 @@ h5,
   font-size: 1.6rem;
   /* 9 */ }
 
-h6,
-.h6 {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 14px;
-  /* 9 */
-  font-size: 1.4rem;
-  /* 9 */ }
-
 input {
-  cursor: pointer !important; }
+  cursor: pointer !important;
+  border-radius: 5px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /* -------------------------- COMPONENTS -------------------------- */
-.App-form .form-input {
+.App-form {
+  max-width: 760px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
   padding: 10px; }
+  .App-form .form-input {
+    padding: 10px;
+    border: 0;
+    box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.207843); }
+  .App-form .form-input-name {
+    border-radius: 5px 0 0 5px;
+    margin-left: 10px;
+    width: 30%; }
+  .App-form .form-input-url {
+    border-radius: 0 5px 5px 0;
+    width: 70%; }
+  .App-form .form-button-save {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.21);
+    margin: 0 10px;
+    padding: 10px;
+    width: 100px;
+    background: #4A90E2;
+    color: #ffffff;
+    background: #4A90E2;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: all 0.3s ease; }
+    .App-form .form-button-save:hover, .App-form .form-button-save:focus {
+      color: #ffffff;
+      background: #2171ce; }
+    .App-form .form-button-save:active {
+      color: #ffffff;
+      background: #185195; }
 
-.App-form .form-button-save {
-  padding: 10px;
-  width: 100px;
-  background: #4A90E2;
-  color: #ffffff;
-  font-weight: 300; }
+.App-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 760px;
+  margin: auto; }
+  .App-list-container .App-listing-item-wrapper {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.21);
+    width: 350px;
+    background: #ffffff;
+    margin: 10px;
+    cursor: pointer;
+    height: 150px;
+    border-radius: 5px;
+    transition: all 0.3s ease; }
+    .App-list-container .App-listing-item-wrapper:hover, .App-list-container .App-listing-item-wrapper:focus, .App-list-container .App-listing-item-wrapper:active {
+      box-shadow: 0px 7px 25px 4px rgba(0, 0, 0, 0.21);
+      margin-top: -2px; }
 
 /* -------------------------- CONTAINERS -------------------------- */
 .App {
-  text-align: center;
-  color: #000000;
-  background: #F4F4F4; }
+  text-align: center; }
 
 .App-header {
   padding: 50px; }

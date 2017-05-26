@@ -17,7 +17,7 @@ class App extends Component {
                 </form>
 
                 <ul className="App-list-container">
-                    <li className="listing-item-wrapper">
+                    <li className="App-listing-item-wrapper">
                         <h3 className="listing-item-name">Dolor Ipsum</h3>
                         <p className="listing-item-url">www.something.com</p>
                         <FontAwesome name='pencil' />
