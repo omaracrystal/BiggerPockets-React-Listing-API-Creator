@@ -57,7 +57,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #f4f0f0;
+  background-color: #F1F1F1;
   font-family: "Open Sans", "Arial", "Helvetica", "sans-serif";
   /* 3 */
   /* 3 */
@@ -172,6 +172,10 @@ li {
   margin: 0;
   padding: 0; }
 
+.hide {
+  display: none !important;
+  visibility: hidden; }
+
 /* -------------------------- COMPONENTS -------------------------- */
 .App-form {
   max-width: 760px;
@@ -216,16 +220,16 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 760px;
-  margin: auto;
-  padding: 0 20px; }
+  margin: auto; }
   .App-list-container .App-listing-item-wrapper {
+    position: relative;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.21);
     width: 44%;
     min-width: 300px;
     background: #ffffff;
     margin: 15px 0;
     cursor: pointer;
-    height: 100px;
+    height: 80px;
     border-radius: 5px;
     text-align: left;
     padding: 15px;
@@ -235,10 +239,31 @@ li {
       margin-top: 10px; }
     .App-list-container .App-listing-item-wrapper .listing-item-name {
       margin: 0; }
+    .App-list-container .App-listing-item-wrapper .fa {
+      position: absolute;
+      padding: 15px;
+      color: #4A90E2;
+      cursor: pointer;
+      font-size: 20px;
+      text-decoration: none !important;
+      transition: all 0.3s ease; }
+      .App-list-container .App-listing-item-wrapper .fa:hover, .App-list-container .App-listing-item-wrapper .fa:focus {
+        color: #1b5dab;
+        font-size: 23px; }
+      .App-list-container .App-listing-item-wrapper .fa:active, .App-list-container .App-listing-item-wrapper .fa:visited {
+        color: black; }
+      .App-list-container .App-listing-item-wrapper .fa.fa-pencil {
+        top: 0px;
+        right: 40px; }
+      .App-list-container .App-listing-item-wrapper .fa.fa-trash-o {
+        top: 0px;
+        right: 0px; }
 
 /* -------------------------- CONTAINERS -------------------------- */
 .App {
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 .App-header {
-  padding: 50px; }
+  padding-top: 30px;
+  padding-bottom: 50px; }

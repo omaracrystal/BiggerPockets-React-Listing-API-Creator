@@ -5,7 +5,7 @@
   border: 0;
   cursor: pointer;
   text-decoration: none !important;
-  transition: all 0.3s ease;
+  transition: $transition-hover;
 
   &:hover,
   &:focus {
@@ -19,15 +19,17 @@
   }
 }
 
-@mixin a-tag-link($color) {
+@mixin text-link($color, $font-size) {
   color: $color;
   cursor: pointer;
+  font-size: $font-size;
   text-decoration: none !important;
-  transition: all 0.3s ease;
+  transition: $transition-hover;
 
   &:hover,
   &:focus {
-    color: darken($color, 20%);;
+    color: darken($color, 20%);
+    font-size: $font-size+3px;
   }
 
   &:active,

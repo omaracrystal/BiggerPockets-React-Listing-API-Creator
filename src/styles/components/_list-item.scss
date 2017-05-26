@@ -4,20 +4,20 @@
   justify-content: space-between;
   max-width: $mq-tablet;
   margin: auto;
-  padding: 0 20px;
 
   .App-listing-item-wrapper {
+    position: relative;
     box-shadow: $box-shadow-property-card;
     width: 44%;
     min-width: 300px;
     background: $property-card-background-color;
     margin: 15px 0;
     cursor: pointer;
-    height: 100px;
+    height: 80px;
     border-radius: $border-radius;
     text-align: left;
     padding: 15px;
-    transition: all 0.3s ease;
+    transition: $transition-hover;
 
     &:hover,
     &:focus,
@@ -33,12 +33,18 @@
 
     }
     .fa {
-      &.fa-pencil {
+      position: absolute;
+      padding: 15px;
+      @include text-link($primary-btn-color, 20px);
 
+      &.fa-pencil {
+        top: 0px;
+        right: 40px;
       }
 
       &.fa-trash-o {
-
+        top: 0px;
+        right: 0px;
       }
     }
   }
