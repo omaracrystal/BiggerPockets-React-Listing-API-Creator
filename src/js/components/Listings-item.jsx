@@ -7,8 +7,8 @@ class ListingItem extends Component {
         return (
 
             <li className="App-listing-item-wrapper">
-                <h3 className="listing-item-name">Dolor Ipsum</h3>
-                <p className="listing-item-url">www.something.com</p>
+                <h3 className="listing-item-name">{this.props.title}</h3>
+                <p className="listing-item-url">{this.props.url}</p>
                 <FontAwesome name='pencil' />
                 <FontAwesome name='trash-o' />
             </li>

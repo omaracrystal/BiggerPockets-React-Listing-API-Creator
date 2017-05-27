@@ -12,9 +12,12 @@ class App extends Component {
 
                 <h1 className="App-header">Listings</h1>
 
-                <ListingForm />
+                <ListingForm onNewPropertySubmit={this.onNewPropertySubmit}
+                             ref="ListingForm" />
 
-                <ListingsList />
+                <ListingsList onDeleteProperty={this.onDeleteProperty}
+                              onEditSubmit={this.onEditSubmit}
+                              ref="ListingList" />
 
             </div>
         );
